@@ -12,6 +12,12 @@ PRP to generate profile with different average reliability.
 
 SPR to generate profile with a different number of agents.
 
+to run the code : `python3 -m v4.generation.generate_w_prop` (change the parameters in the main inside the file)
+
+## read_xp.py
+
+to tests the dataset `python3 -m v4.generation.read_xp 469 spr` with 469 the number of the dataset and spr the type of generation used (you can find this information in the name of the dataset)
+
 ## Datasets in xp/
 
 Each line represents a profile generated and used in our experiments. 
