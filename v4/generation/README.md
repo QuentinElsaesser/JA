@@ -4,6 +4,8 @@ After the tests, we write all the results in a .tex file and read this file to g
 
 # -- Judgment Aggregation Generation
 
+`constants.FORMULA` must be `True`.
+
 ## generate_w_prop.py
 
 generate the agendas and the profile. 
@@ -38,6 +40,8 @@ _ VARIANCE : Variance allowed for the choice of agents (100=all is allowed)
 - The agenda used with this profile. 
 
 # -- Truth Discovery Generation 
+
+`constants.FORMULA` must be `False`.
 
 ## File in xp/
 
