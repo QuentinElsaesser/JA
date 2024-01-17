@@ -2,7 +2,38 @@
 
 After the tests, we write all the results in a .tex file and read this file to generate with matplotlib the graphics.
 
-# File in xp/
+# -- Judgment Aggregation Generation
+
+## generate_w_prop.py
+
+generate the agendas and the profile. 
+
+PRP to generate profile with different average reliability.
+
+SPR to generate profile with a different number of agents.
+
+## Datasets in xp/
+
+Each line represents a profile generated and used in our experiments. 
+
+The ID starts at zéro.
+
+_ VARIANCE : Variance allowed for the choice of agents (100=all is allowed)
+- NB_OBJ : The number of formulae in the graph
+- NB_SRC : The number of agents in the graph
+- NB_FL : The minimum number of truth assignement associated with a formulae
+- NB_FU : The maximum number of truth assignement associated with a formulae
+- NBF : The number of formulae in the extended agenda
+- TRUST : The average reliability of the agents
+- SF : The truth assignment claimed by the agents. The agents are separated by a dash (-)
+- OF : The formulae and the truth assignment. The formulae are separated by a dash (-)
+- TRUTH : ID of the correct truth assignment chosen
+- INTERVAL : the interval used to group the profiles
+- The agenda used with this profile. 
+
+# -- Truth Discovery Generation 
+
+## File in xp/
 
 Each line represents a graph generated and used in our experiments. 
 
@@ -23,47 +54,47 @@ object.
 - INTERVAL : the interval used to group the graphs
 - PRC/SRC/FCT : represent what we change in our graphs and it is linked to the INTERVAL (PRC : reliability of the sources; SRC : number of sources; FCT number of facts by object)
 
-# att_metrics.py 
+## att_metrics.py 
 
 Compute the results for one graph.
 
-# brutefrc_exp_para.py
+## brutefrc_exp_para.py
 
 - generate the graphs
 - ask to change the parameters if needed (to find quickly the 1000 graphs for each interval)
 
-# graph_methods.py
+## graph_methods.py
 
 generate one graph and copy this graph for all the methods then run the algorithm and compute the value for the metrics
 
-# latex.py
+## latex.py
 
 Write the results in a latex file
 
-# main_generate.py
+## main_generate.py
 
 main to generate the results/plot
 
-# metrics.py
+## metrics.py
 
 compute the results for all the metrics with the 1000 graphs
 
-# plot.py
+## plot.py
 
 create the plot
 
-# priors.py
+## priors.py
 
 generate a file with the possible values for the a priori probability
 
-# random_graph.py
+## random_graph.py
 
 generate a graph depending on the parameters given
 
-# read_xp.py
+## read_xp.py
 
 read a file with the graphs already generated and run everything with the method from brutefrc_exp_para.py
 
-# spe_metrics.py
+## spe_metrics.py
 
 specific class to write the reliability sources by sources in the .tex file

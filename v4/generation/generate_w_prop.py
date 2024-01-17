@@ -120,9 +120,8 @@ class GenerateWProp:
         self.modelf = []
         self.modelf_doublon = []
         
-        min_value = 4
-        max_value = 5
-        # max_value = self.nb_litt-1
+        min_value = 0
+        max_value = self.nb_litt-1
 
         for i in range(self.nbo):
             n = randint(0, self.len_agenda_interp-1)
@@ -793,8 +792,9 @@ if __name__ == "__main__":
     file = "prop12"
     distrib = ""    
     # typeg = "SPR"; intv = ['65-70']; int_variance = [10,20,30,40,50]
-    typeg = "SPR"; intv = ['60-64']; int_variance = [10]
-
+    typeg = "SPR"; intv = ['60-64']; int_variance = [100]
+    #typeg = "PRP"; intv = ['30-34','35-39','40-44','45-49','50-54','55-59','60-64','65-69','70-74','75-79']; int_variance = [100]
+    
     # gen agenda à chaque nouveau graphe
     gen_agenda = True
     nb_litt = 10
