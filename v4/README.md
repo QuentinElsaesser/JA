@@ -10,31 +10,23 @@ With Python3
 
 in root project :
 
-run main with plurality : `python3 -m v4.main.main_plurality`
-
-## axiomes
-
-Files that allow to test the axioms/properties on the methods and return the counter example when there is one.
+run main with plurality : `python3 -m v4.main.main_formule sum`
 
 ## examples
 
-Graphs written in a specific format to test the methods.
+Graphs/profiles written in a specific format to test the methods.
 
 ## generation
 
-Generation of the random graphs to test our methods and the methods from the literature.
+Generation of the random graphs/(profiles and agendas) to test our methods and the methods from the literature.
 
 ## graph
 
-Class to create a graph and run our algorithm on this graph.
+Class to create a graph and run our algorithm on this graph to evaluate the reliability.
 
 ## main
 
 Main programm.
-
-## notebook
-
-Notebook.
 
 ## other_methods
 
@@ -44,9 +36,16 @@ Methods from the literature.
 
 Directory to store all the graphics.
 
-## priors
+## priors_file
 
 CVS with vectors to help (we just read this file instead of generating all the vectors all the time) the generation.
+
+## prop_files
+
+txt with the agendas generated.
+
+The first line is : (the number of atomic propositions) - (the interpretation chosen for the formula (separated with a ;)) 
+The other lines : the truth value assigned to the atomic propostions and the truth value of each formulae (separated with a ;)
 
 ## results
 
