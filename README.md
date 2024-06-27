@@ -2,6 +2,8 @@
 
 In this repository, you can find all the code for the methods of the literature and the ICE methods, also the code to generate datasets and run the tests on the methods. The code is in Python3 (need numpy to run). 
 
+You can also find the proofs in the file Proofs.pdf.
+
 The code to generate the datasets is in v4/generation/generate_w_prop.py and run the tests with a specific dataset is in v4/generation/read_xp.py. 
 
 The code to evaluate the reliability of the agents and the confidence of formulae is in v4/graph and v4/vote. 
