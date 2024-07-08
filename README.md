@@ -1,8 +1,12 @@
 # Judgment Aggregation with Unknown Variable Reliability
 
-In this repository, you can find all the code for the methods of the literature and the ICE methods, also the code to generate datasets and run the tests on the methods. The code is in Python3 (need numpy to run). 
+## Proofs
 
-You can also find the proofs in the file Proofs.pdf.
+You can find the proofs of the properties from the paper in the file Proofs.pdf.
+
+## Code
+
+In this repository, you can find all the code for the methods of the literature and the ICE methods, also the code to generate datasets and run the tests on the methods. The code is in Python3 (require numpy to run everything). 
 
 The code to generate the datasets is in v4/generation/generate_w_prop.py and run the tests with a specific dataset is in v4/generation/read_xp.py. 
 
@@ -21,4 +25,4 @@ The code of the methods from (Lang et al., 2011) is in v4/judag/*.py with (*=RRA
 
 The code of the methods from (Everaere et al., 2014) is in v4/judag/*.py with (*=COUNTSUM/COUTMAX).
 
-The example used in Table 1 is in v4/examples/majo2.txt.
+The example used in Table 1 is in tjhe file v4/examples/majo2.txt.
