@@ -2,7 +2,7 @@
 
 ## Proofs
 
-You can find the proofs of the properties from the paper in the file Proofs.pdf.
+You can find the proofs of the properties from the paper in the file Proofs.pdf (The text of «Proofs.pdf» does not appear if you use Safari. In this case use the button «Download file»). 
 
 ## Code
 
